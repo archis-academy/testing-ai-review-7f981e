@@ -1,4 +1,4 @@
-public class Scroll {
+public class Scl {
 
 	public static void main(String[] args) throws InterruptedException {
 		
