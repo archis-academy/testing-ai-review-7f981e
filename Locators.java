@@ -30,6 +30,7 @@ driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
 driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 driver.findElement(By.id("chkboxOne")).click();
 driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+driver.close();
 }
 
 }
