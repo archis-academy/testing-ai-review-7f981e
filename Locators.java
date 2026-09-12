@@ -12,8 +12,9 @@ public static void main(String[] args) throws InterruptedException {
 //implicit wait - 2 seconds time out
 System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
 WebDriver driver = new ChromeDriver();
+String url = "https://rahulshettyacademy.com/locatorspractice/";
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-driver.get("https://rahulshettyacademy.com/locatorspractice/");
+driver.get(url);
 driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 driver.findElement(By.name("inputPassword")).sendKeys("hello123");
 driver.findElement(By.className("signInBtn")).click();
@@ -27,7 +28,6 @@ driver.findElement(By.xpath("//form/input[3]")).sendKeys("9864353253");
 driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 System.out.println(driver.findElement(By.cssSelector("form p")).getText());
 driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
-Thread.sleep(1000);
 driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
 driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 driver.findElement(By.id("chkboxOne")).click();
