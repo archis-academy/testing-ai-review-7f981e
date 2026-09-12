@@ -8,8 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Locators {
 
 public static void main(String[] args) throws InterruptedException {
-// TODO Auto-generated method stub
-//implicit wait - 2 seconds time out
 System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
 WebDriver driver = new ChromeDriver();
 String url = "https://rahulshettyacademy.com/locatorspractice/";
